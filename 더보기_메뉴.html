@@ -1,0 +1,491 @@
+<html lang="ko">
+<head>
+<script type="text/javascript" id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflgi1B_c/www-widgetapi.js" async=""></script>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="http://image.yeoboya.com/imgs/new_wedding/mobile/img/favicon_16.ico" type="image/x-icon">
+<link rel="icon" href="http://image.yeoboya.com/imgs/new_wedding/mobile/img/favicon_16.ico" type="image/x-icon">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="ALL">
+<meta name="robots" content="index,follow">
+<meta name="revisit-after" content="1 days">
+<meta name="Subject" content="여보야">
+<meta name="description" content="결혼, 재혼, 평생 배우자를 찾는 스마트한 방법, 문의전화1522-3379">
+<meta name="keywords" content="여보야, yeoboya, 결혼, 재혼">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="HandheldFriendly" content="true">
+<meta name="mobile-web-app-capable" content="yes">
+<title>여보야</title>
+<link href="css/webfont.min2.css" rel="stylesheet" type="text/css">
+<link href="css/default.css" rel="stylesheet" type="text/css">
+<script src="https://www.youtube.com/iframe_api"></script><script>
+document.domain = "yeoboya.com";
+var _underwork = false;
+</script>
+<script src="http://m.yeoboya.com/_global/js/jquery.min.js"></script>
+<script src="http://m.yeoboya.com/_global/js/jquery-cookie.min.js"></script>
+<script src="http://m.yeoboya.com/_global/js/jsBridge.js?ver=1513583244"></script>
+<script src="http://m.yeoboya.com/_global/js/app.js?ver=1513583244"></script>
+<script src="http://m.yeoboya.com/_global/js/NodeMarrySession.js?ver=1513583244"></script>
+<script src="http://m.yeoboya.com/js/default.js?ver=1513583244"></script>
+<script src="http://m.yeoboya.com/js/testDomains.js?ver=1513583244"></script>
+<script src="http://m.yeoboya.com/_global/js/jquery-ui.min-1.12.1.js"></script>
+<style>
+#imgSpinBg {position:fixed;width:100%;height:100%;background:rgba(0,0,0,0.7);top:0;}
+#imgSpin {position:fixed;top:50%;left:50%;margin-top:-36px;margin-left:-36px;width:72px;height:72px;}
+@-webkit-keyframes flip /* Safari and Chrome */ {
+  from {
+    -ms-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  to {
+    -ms-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+@keyframes flip {
+  from {
+    -ms-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  to {
+    -ms-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+.flip {    
+  -webkit-animation: flip 1.2s ease infinite;
+  -moz-animation: flip 1.2s ease infinite;
+  -ms-animation: flip 1.2s ease infinite;
+  -o-animation: flip 1.2s ease infinite;
+  animation: flip 1.2s ease infinite;
+}
+
+.btn_home{display:inline-block;}
+.btn_home{position:absolute; padding:7px 20px 2px 50px; top:0; right:0;}
+</style>
+
+</head>
+<body style=";-webkit-overflow-scrolling: touch">
+<script>
+// path controls
+var _chnl = 'cont';
+var _ctrl = 'moreview';
+var _dest = '';
+
+$(window).on("touchend",function(){});
+</script>
+<style>
+/* 공지사항 뱃지 추가 */
+.horizontal_add{position:relative;}
+.horizontal_add .new_alim{position:absolute; left:19%; margin-left:-12px; top:12px;}
+@media screen and (min-width:400px) and (max-width:600px) {
+    .horizontal_add .new_alim{left:17%;}
+}
+@media screen and (min-width:601px) and (max-width:800px) {
+.horizontal_add .new_alim{left:16%;}
+}
+@media screen and (min-width:801px) {
+.horizontal_add .new_alim{left:15%;}
+}
+
+/*-----171218 더보기 메뉴 버튼 추가(정우아)-----*/    
+.add_img_pd10 {padding-top:26px; padding-bottom:18px;}
+.add_img_pd11 {padding-top:20px; padding-bottom:15px;}
+.add_img_pd12 {padding-top:22px; padding-bottom:21px;}
+.add_img_pd14 {padding-top:22px; padding-bottom:19px;}
+#company_ad { display:block;}
+.add_img_pd15 {padding-top:20px; padding-bottom:12px;}
+#company_ad { display:block;}
+.add_img_pd16 {padding-top:16px; padding-bottom:12px;}
+#company_ad { display:block;}
+    
+</style>
+
+<script src="http://developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script language="javascript">
+	Kakao.init('3d30a595bb57511d650347d2f2a393ff');
+
+	$.inviteKakao = function () {
+		if($isApp) {
+				if(($isAppARD && $.versionCompare($device.appVer, '1.5.15') <= 0) || ($isAppIOS && $.versionCompare($device.appVer, '4.1') <= 0)) {
+					window.WebViewJavascriptBridge.callHandler(
+						'callFromWeb',
+						{
+							'cmd': 'kakaoLink',
+							'title': '',
+							'imgUrl': Base64.encode('http://image.club5678.com/imgs/new_wedding/mobile/img/kakao_img_160722.png'),
+							'width': '300',
+							'height': '300',
+							'msg': '[여보야] 내 배우자만큼은 내가 직접! 배우자를 쉽고 빠르게 찾을 수 있는 여보야!',
+							'webLink': Base64.encode('http://m.yeoboya.com/'),
+							'appLink': Base64.encode('http://m.yeoboya.com/')
+						},
+						function(data) {
+							//var retData = $.parseJSON(data);
+							//$.debugAlert(retData);
+						}
+					);
+				} else {
+					window.WebViewJavascriptBridge.callHandler(
+						'callFromWeb',
+						{
+							'cmd':'kakaoLink',
+							'title':'여보야 앱으로',
+							'msg':{
+								"text":'[여보야] 내 배우자만큼은 내가 직접! 배우자를 쉽고 빠르게 찾을 수 있는 여보야!',
+								"link":Base64.encode('http://m.yeoboya.com/')
+							},
+							'image':{
+								"width":'300',
+								"height":'300',
+								"path":Base64.encode('http://image.club5678.com/imgs/new_wedding/mobile/img/kakao_img_160722.png')
+							},
+							'execHandler':{
+								//"cmd":'popLinkOpen',
+								//"pageLink":''
+							}
+						},
+						function(data) {
+							//var retData = $.parseJSON(data);
+							//$.debugAlert(retData);
+						}
+					);
+				}
+		}else{
+				Kakao.Link.createTalkLinkButton({
+					container: '#kakao-link-btn',
+					label: '[여보야] 내 배우자만큼은 내가 직접! 배우자를 쉽고 빠르게 찾을 수 있는 여보야!',
+					image: {
+						src: 'http://image.club5678.com/imgs/new_wedding/mobile/img/kakao_img_160722.png',
+						width: '300',
+						height: '300'
+					},
+					webButton: {
+						text: '앱으로 가기'
+					}
+				});
+		}
+}
+
+//sms 문자초대.
+$.smsInvite = function(){
+	if($isApp) {
+		window.WebViewJavascriptBridge.callHandler(
+			'callFromWeb',
+			{
+				'cmd': 'smsLink',
+				'msg':'[여보야] 스마트한 결혼,재혼 서비스! 여보야에서 평생의 인연을 만나보세요. 아래 링크를 통해 이동합니다.',
+				'link': Base64.encode('http://goo.gl/Ft5pj4'), // 구글, AppStore 여보야
+				'imgUrl': Base64.encode('http://image.club5678.com/imgs/new_wedding/mobile/img/mms_yeoboya_2.jpg')
+			},
+			function(data) {
+				//var retData = $.parseJSON(data);
+				//$.debugAlert(retData);
+			}
+		);
+	}
+}
+
+// 휴먼설정
+$.setRest = function(){
+		$.confirm('계정휴면중에는<br/>여보야 모든 서비스 이용이 불가합니다.<br/><br/>계정휴면 처리 하시겠습니까?','취소', '계정휴면', null, function(){
+				$.ajax({
+						type:'POST',
+						url:'/?chnl=ajax&dest=setRest',
+						dataType: 'html',
+						timeout: 5000,
+						data:{'setType':'run','memNo':$.cookie('gCCV:NO')},
+						cache: false,
+						success: function(data) {
+								if(data=='1') {
+										$.alert('계정휴면 처리 되었습니다.','확인',function(){
+												window.location.replace('/?chnl=cont&ctrl=member&dest=logout');
+										});
+								}
+						},
+						error: function(x,y,z) {
+						}
+				});
+		});
+}
+
+ $(window).load(function(){
+	if(localStorage.getItem('noticeMode') == '1'){
+		localStorage.removeItem('noticeMode');
+	}else{
+		$.noticeBadge();
+	}
+ });
+
+$(function(){
+  /*---- 카피라이트 기기별 설정 ----*/
+	/*
+  var winHeight = $(window).height();
+  var dHeight = parseInt($('.wedding_wrap').height());
+  var comHeight = 0;
+  var andHeight = 55;
+  var iosHeight = andHeight+15;
+  if($isAppIOS == true) {
+    comHeight = iosHeight;
+  }else if($isApp == true) {
+    comHeight = andHeight;
+  }else{
+    comHeight = andHeight+55;
+  }
+  // 화면사이즈가 작을때 : relative로 붙이고 스크롤 생기도록
+  var gap = (dHeight+comHeight)-winHeight;
+  if(gap >= 0 ){
+    $(window).load(function(){
+      $('#company_ad').removeClass('posi_fixed').addClass('posi_relative');
+    });
+  // 화면사이즈가 클때 : 기본 fixed, 하단메뉴 위로 붙인다.
+  }else{
+    $(window).load(function(){
+      $('#company_ad').css('height', comHeight);
+    });
+  }
+	*/
+});
+</script>
+
+<div class="wedding_wrap">
+	<header>
+		<a href="javascript:$.goBack();" class="btn_back"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/btn_back.jpg" width="30" height="31" alt="뒤로"></a>
+		<p class="title_header font_m">더보기</p>
+		<a href="javascript:void(0);" onclick="$.finishPop('')" class="btn_home">
+			<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/home.png" width="33" height="31" alt="홈으로">
+		</a>
+	<span id="connectionStatus" style="position:absolute; top:-5px; left:-3px;">&nbsp;<b><font color="red" size="2">OO</font></b></span></header>	<div class="add_wrap_box">
+		<ul class="horizontal_add">
+			<li><a href="/?chnl=cont&amp;ctrl=basicinfo&amp;dest=" class="font_b btn_add_menu"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_add_01.jpg" class="addlook_img add_img_pd01" width="34" height="27" alt="기본정보설정">기본정보설정</a></li>
+			<li><a href="/?chnl=cont&amp;ctrl=blocklist&amp;dest=&amp;memNo=148362" class="font_b btn_add_menu"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_add_02.jpg" class="addlook_img add_img_pd02" width="35" height="28" alt="차단회원관리">차단회원관리</a></li>
+			<li><a href="/?chnl=cont&amp;ctrl=buyList&amp;dest=" class="font_b btn_add_menu"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img3/add_ico_paymentcart.jpg" class="addlook_img add_img_pd03" width="32" height="33" alt="내 아이템관리">내 아이템관리</a></li>
+			<li><a href="/?chnl=cont&amp;ctrl=cscenter&amp;dest=" class="font_b btn_add_menu last_menu"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_add_06.jpg" class="addlook_img add_img_pd06" width="27" height="34" alt="고객센터">고객센터</a></li>
+		</ul>
+        <ul class="horizontal_add">
+            <li>
+                <a href="javascript:$.goNotice2();" class="font_b btn_add_menu">
+                    <img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_add_05.jpg" class="addlook_img add_img_pd05" width="34" height="27" alt="기본정보설정">공지사항
+                    <div class="new_alim" style="display:none">
+                        <img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_drop_new.png" width="23" height="23" class="new_alim_img" alt="새 공지사항">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/?chnl=cont&amp;ctrl=event&amp;dest=eventList" class="font_b btn_add_menu"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/ico_add_15.png" class="addlook_img add_img_pd14" width="49" height="32" alt="Talk 게시판">Talk 게시판</a>
+            </li>
+            <!--171218 wshop 추가 / 방문기록설정, 알림수신설정 통합-설정-->
+            <li>
+                <a href="#" class="font_b btn_add_menu"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/wshop/ico_wshop.png" class="addlook_img add_img_pd15" width="46px" height="40px" alt="Wshop">W Shop</a>
+            </li>
+            <li>
+                <a href="/?chnl=cont&amp;ctrl=alarmset&amp;dest=" class="font_b btn_add_menu last_menu"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/wshop/ico_setting.png" class="addlook_img add_img_pd16" width="56px" height="44px" alt="설정">설정</a>
+            </li>
+            <!--// 171218 wshop 추가 / 방문기록설정, 알림수신설정 통합-설정-->
+        </ul>
+        <ul class="horizontal_add">
+            <li>
+                <a href="javascript:$.setRest();" class="font_b btn_add_menu"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img2/ico_add_09.jpg" class="addlook_img add_img_pd09" width="26" height="26" alt="알림설정">휴면설정</a>
+            </li>
+            <li>
+                <a href="/?chnl=cont&amp;ctrl=moreview&amp;dest=leaveMemberPwChk" class="font_b btn_add_menu"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/ico_add_14.png" class="addlook_img add_img_pd07" width="36" height="30" alt="탈퇴하기">탈퇴하기</a>
+            </li>
+        </ul>
+	</div>
+	
+	<style>
+		.cf_wrap{width:100%; height:auto; padding:4px 0 57px 0; background-color:#eee;}
+		.cf_wrap .cf_bg{border-top:1px solid #d3d3d3; border-bottom:1px solid #d3d3d3;}
+		.cf_wrap .cf_header{position:relative; width:100%; height:31px; line-height:31px; padding:0 10px; box-sizing:border-box; background-color:#fff; color:#263238; font-size:13px; font-weight:bold; letter-spacing:-0.5px;}
+		.cf_wrap .cf_content{display:block; position:relative; width:100%; height:auto; margin:0; padding:0; background-color:#fff;}
+		.cf_iframe{position:relative; padding-bottom:56.25%; height:0; overflow:hidden;}
+		.cf_iframe iframe, .cf_iframe object, .cf_iframe embed{position:absolute; top:0; left:0; display:block; width:100%; height:100%; margin:0; padding:0; border:none; outline:none;}
+		.cf_share{position:relative; width:100%; height:auto; padding:5px 0; background-color:#fff; text-align:center;}
+		.cf_share .share_kko, .cf_share .share_kks, .cf_share .share_fcb{display:inline-block; cursor:pointer; vertical-align:middle;}
+		.cf_share .share_kks{margin:0 8px;}
+	</style>
+	<div class="cf_wrap">
+		<div class="cf_bg">
+			<div class="cf_header">
+				여보야 TV CF 보기
+			</div>
+			<div class="cf_content">
+				<div class="cf_iframe">
+					<iframe id="cf_pop_iframeID" frameborder="0" allowfullscreen="1" gesture="media" allow="encrypted-media" title="YouTube video player" width="560" height="315" src="https://www.youtube.com/embed/cHG4886KvZg?autoplay=0&amp;controls=1&amp;enablejsapi=1&amp;origin=http%3A%2F%2Fm.yeoboya.com&amp;widgetid=1"></iframe>
+				</div>
+			</div>
+			<div class="cf_share">
+				<div class="share_kko"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/evnt_page/btn_share_kko.png" width="30px" height="32px" alt="카카오톡공유" onclick="$.shareCFKakao()"></div>
+				<div class="share_kks"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/evnt_page/btn_share_kks.png" width="30px" height="32px" alt="카카오스토리공유" onclick="$.shareCFEvent('kakao');"></div>
+				<div class="share_fcb"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/evnt_page/btn_share_fcb.png" width="90px" height="32px" alt="페이스북공유" onclick="$.shareCFEvent('facebook');"></div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<script>
+	var cfVideoID = 'cHG4886KvZg';
+	var tag = document.createElement('script');
+
+	tag.src = "https://www.youtube.com/iframe_api";
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+	var player;
+	function onYouTubeIframeAPIReady() {
+		player = new YT.Player('cf_pop_iframeID', {
+			width: '560',
+			height: '315',
+			videoId: cfVideoID,
+			playerVars: {
+				'autoplay': 0,
+				'controls': 1
+			},
+			events: {
+				'onReady': onPlayerReady,
+				'onStateChange': onPlayerStateChange
+			}
+		});
+	}
+
+	function onPlayerReady(event) {
+//		console.log('onReady');
+	}
+
+	function onPlayerStateChange(event) {
+//			console.log('onPlayerStateChange'+event.data);
+		if(event.data == 0){
+			player.stopVideo();
+		}
+	}
+	
+	$.shareCFKakao = function () {
+		var title = '결혼재혼 필수어플 여보야';
+		var imgWidth = '300';
+		var imgHeight = '300';
+		var imgPath = 'http://image.yeoboya.com/imgs/new_wedding/cf_pop/brc.jpg';
+		var linkUrl = 'http://m.yeoboya.com/';
+		var msgTxt = '여보야 CF 보러가기'
+		var webLinkUrl = 'https://youtu.be/'+cfVideoID;
+
+		if($isApp) {
+						if(($isAppARD && $.versionCompare($device.appVer, '1.5.15') <= 0) || ($isAppIOS && $.versionCompare($device.appVer, '4.1') <= 0)) {
+				window.WebViewJavascriptBridge.callHandler(
+				  'callFromWeb',
+				  {
+					  'cmd': 'kakaoLink',
+					  'title': title,
+					  'imgUrl': Base64.encode(imgPath),
+					  'width': imgWidth,
+					  'height': imgHeight,
+					  'msg': msgTxt,
+					  'webLink': Base64.encode(webLinkUrl),
+					  'appLink': Base64.encode(linkUrl)
+				  },
+				  function(data) {
+					  //var retData = $.parseJSON(data);
+					  //$.debugAlert(retData);
+				  }
+				);
+			} else {
+				window.WebViewJavascriptBridge.callHandler(
+				  'callFromWeb',
+				  {
+					  'cmd':'kakaoLink',
+						'title':'여보야 앱으로',
+						'msg':{
+							"text":msgTxt,
+							"link":Base64.encode(webLinkUrl)
+						},
+						'image':{
+							"width":imgWidth,
+							"height":imgHeight,
+							"path":Base64.encode(imgPath)
+						},
+						'execHandler':{
+							//"cmd":'popLinkOpen',
+							//"pageLink":''
+						}
+				  },
+				  function(data) {
+					  //var retData = $.parseJSON(data);
+					  //$.debugAlert(retData);
+				  }
+				);
+			}
+		} else {
+						Kakao.Link.sendTalkLink({
+				label: title,
+				image: {
+					src: imgPath,
+					width: imgWidth,
+					height: imgHeight
+				},
+				appButton: {
+					text: '앱으로 이동',
+					webUrl: linkUrl
+				},
+				webLink: {
+					text: content,
+					url: linkUrl
+				},
+				fail : function(err) {
+					$.alert("카톡친구 알리기 기능은 스마트폰에서만 가능합니다.", "확인", function() {});
+				}
+			});
+		}
+	}
+
+	// 카카오스토리 & 페이스북 공유하기
+	$.shareCFEvent = function (service) {
+		var title = "결혼재혼 필수어플 여보야";
+		var youtuURL = "https://youtu.be/"+cfVideoID;
+		var facebookShareurl = 'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(youtuURL)+'&t='+encodeURIComponent(title);
+		if(service == 'kakao'){
+			var url = 'http://m.yeoboya.com/cont/snsShare.php?service=cfshare';
+		} else {
+			var sharedUrl = youtuURL;
+			var url = facebookShareurl;
+		}
+
+		if($isApp) {
+			window.WebViewJavascriptBridge.callHandler(
+			  'callFromWeb',
+			  {
+				  'cmd': 'browserOpen',
+				  'url': Base64.encode(url),
+			  },
+			  function(data) {
+				  //var retData = $.parseJSON(data);
+				  //$.debugAlert(retData);
+			  }
+			);
+		} else {
+			if(service == 'kakao') {
+				//<![CDATA[
+				Kakao.Story.share({
+					url: youtuURL,
+					text: title
+				});
+				//]]>
+			} else {
+				window.open(facebookShareurl, 'sharer','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+			}
+		}
+	}
+</script>
+
+</body></html>
